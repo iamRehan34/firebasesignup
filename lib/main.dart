@@ -16,32 +16,36 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return FutureBuilder(
-    //   future: _initialization,
-    //   builder: (context, snapshot) {
-    //     if (snapshot.hasError) {
-    //       print("Something went Wrong");
-    //     }
-    // if (snapshot.connectionState == ConnectionState.done) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        initialRoute: '/login',
-        routes: {
-          '/login': (context) => loginPage(),
-          '/homepage': (context) => HomePage(),
-          '/signup': (context) => SignUp(),
-          // '/homipage': (context) => homipage(),
-        });
-    //
+    return FutureBuilder(
+      future: _initialization,
+      builder: (context, snapshot) {
+        if (snapshot.hasError) {
+          print("Something went Wrong");
+        }
+        if (snapshot.connectionState == ConnectionState.done) {
+          return MaterialApp(
+              debugShowCheckedModeBanner: false,
+              initialRoute: '/login',
+              routes: {
+                '/login': (context) => loginPage(),
+                '/homepage': (context) => HomePage(),
+                '/signup': (context) => SignUp(),
+                // '/homipage': (context) => homipage(),
+              });
+        }
+        return CircularProgressIndicator();
+      },
+    );
   }
 }
-// runApp(MaterialApp(
-//   debugShowCheckedModeBanner: false,
-//   initialRoute: '/login',
-//   routes: {
-//     '/login': (context) => loginPage(),
-//     '/homepage': (context) => HomePage(),
-//     '/signup': (context) => SignUp(),
-//     // '/homipage': (context) => homipage(),
-//   },
-// ));
+  // runApp(MaterialApp(
+  //   debugShowCheckedModeBanner: false,
+  //   initialRoute: '/login',
+  //   routes: {
+  //     '/login': (context) => loginPage(),
+  //     '/homepage': (context) => HomePage(),
+  //     '/signup': (context) => SignUp(),
+  //     // '/homipage': (context) => homipage(),
+  //   },
+  // ));
+

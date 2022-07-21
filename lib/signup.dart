@@ -1,6 +1,6 @@
 // import 'dart:html';
 
-// import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -33,8 +33,8 @@ class _SignUpState extends State<SignUp> {
   TextEditingController _name = new TextEditingController();
   TextEditingController _secondname = new TextEditingController();
 
-  // CollectionReference emailsignin =
-  //     FirebaseFirestore.instance.collection('emailsignin');
+  CollectionReference emailsignin =
+      FirebaseFirestore.instance.collection('emailsignin');
 
   @override
   void dispose() {
