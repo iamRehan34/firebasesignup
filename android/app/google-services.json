@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "167587454567",
+    "project_id": "emailsigin-92905",
+    "storage_bucket": "emailsigin-92905.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167587454567:android:3fa366071d6aa6d03c3ec2",
+        "android_client_info": {
+          "package_name": "com.example.signup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167587454567-vqrgff9t32l21cv7ccmlmqmb8uu3lg87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUqAf57rXkVDLrIyFRNvsbg8m0k9Rl0A4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167587454567-vqrgff9t32l21cv7ccmlmqmb8uu3lg87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
